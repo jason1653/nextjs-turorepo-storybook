@@ -1,5 +1,5 @@
 import { Meta, Story, StoryObj } from "@storybook/react";
-import { AppTitle } from "ui/components/atoms/AppTitle";
+import { AppTitle } from ".";
 
 export default {
   title: "atoms/AppTitle",
