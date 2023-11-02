@@ -6,5 +6,8 @@ export default {
   component: Label,
 } as Meta;
 
-const Template = () => <Label />;
+const Template = (args) => <Label {...args} />;
 export const Default = Template.bind({});
+Default.args = {
+  label: "리액트공부하기",
+};
