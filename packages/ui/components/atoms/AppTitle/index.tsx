@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 const Container = styled.a`
   color: #ffffff;
@@ -8,5 +9,9 @@ const Container = styled.a`
 `;
 
 export const AppTitle = () => {
-  return <Container href="/">할일목록앱</Container>;
+  return (
+    <>
+      <Container href="/">할일목록앱</Container>
+    </>
+  );
 };
