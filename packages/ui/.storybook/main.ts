@@ -9,6 +9,7 @@ import { join, dirname } from "path";
 function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, "package.json")));
 }
+
 const config: StorybookConfig = {
   stories: [
     "../stories/**/*.mdx",
@@ -22,11 +23,13 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-onboarding"),
   ],
   framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
+    // name: getAbsolutePath("@storybook/react-vite"),
+    name: "@storybook/nextjs",
     options: {},
   },
   docs: {
     autodocs: "tag",
   },
 };
+
 export default config;

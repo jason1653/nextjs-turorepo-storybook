@@ -10,8 +10,8 @@ const Container = styled.a`
 
 export const AppTitle = () => {
   return (
-    <>
-      <Container href="/">할일목록앱</Container>
-    </>
+    <Link href="/">
+      <Container>할일목록앱</Container>
+    </Link>
   );
 };
