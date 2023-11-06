@@ -31,7 +31,7 @@ interface Props {
 export const Button = ({ label, color = "#ff5722", onClick }: Props) => {
   return (
     <Container color={color} onClick={onClick}>
-      버튼
+      {label}
     </Container>
   );
 };
